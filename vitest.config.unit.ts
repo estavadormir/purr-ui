@@ -11,6 +11,12 @@ export default defineConfig({
     globals: true,
     setupFiles: ['./src/test-setup.ts'],
     pool: 'forks',
+    isolate: true,
+    server: {
+      deps: {
+        external: ['jsdom'],
+      },
+    },
     coverage: {
       reporter: ['text', 'json', 'html'],
       exclude: [
