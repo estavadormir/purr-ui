@@ -4,7 +4,14 @@
   "version": "0.1.0",
   "type": "module",
   "description": "A modern, accessible React component library with TailwindCSS styling",
-  "keywords": ["react", "components", "tailwindcss", "typescript", "ui", "storybook"],
+  "keywords": [
+    "react",
+    "components",
+    "tailwindcss",
+    "typescript",
+    "ui",
+    "storybook"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/estavadormir/purr-ui.git"
@@ -81,6 +88,7 @@
     "eslint-plugin-storybook": "^9.1.8",
     "glob": "^11.0.3",
     "globals": "^16.4.0",
+    "happy-dom": "^18.0.1",
     "jsdom": "^27.0.0",
     "storybook": "^9.1.8",
     "tailwindcss": "^4.1.13",
