@@ -72,3 +72,28 @@ jobs:
         run: pnpm publish --access public --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Get package version
+        id: package-version
+        run: echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ steps.package-version.outputs.version }}
+          release_name: Release v${{ steps.package-version.outputs.version }}
+          body: |
+            ## What's Changed
+
+            Published to NPM: [@estavadormir/purr-ui@${{ steps.package-version.outputs.version }}](https://www.npmjs.com/package/@estavadormir/purr-ui/v/${{ steps.package-version.outputs.version }})
+
+            ### Install
+            ```bash
+            npm install @estavadormir/purr-ui@${{ steps.package-version.outputs.version }}
+            ```
+
+            See the [README](https://github.com/estavadormir/purr-ui#readme) for usage instructions.
+          draft: false
+          prerelease: false
