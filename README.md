@@ -15,18 +15,18 @@ A modern, accessible React component library built with TailwindCSS.
 ## Installation
 
 ```bash
-npm install @hairy-studios/purr-ui
+npm install @estavadormir/purr-ui
 # or
-pnpm add @hairy-studios/purr-ui
+pnpm add @estavadormir/purr-ui
 # or
-yarn add @hairy-studios/purr-ui
+yarn add @estavadormir/purr-ui
 ```
 
 ## Quick Start
 
 ```jsx
-import { ProjectCard, SectionTitle, TechCard, SocialLink } from '@hairy-studios/purr-ui';
-import '@hairy-studios/purr-ui/styles';
+import { ProjectCard, SectionTitle, TechCard, SocialLink } from '@estavadormir/purr-ui';
+import '@estavadormir/purr-ui/styles';
 
 function App() {
   return (
