@@ -13,7 +13,7 @@ interface TechCardProps {
 
 export const TechCard = ({ item, className }: TechCardProps) => (
   <a
-    className="h-fit"
+    className="purr:h-fit"
     rel="noreferrer"
     href={item.url}
     target="_blank"
@@ -21,17 +21,17 @@ export const TechCard = ({ item, className }: TechCardProps) => (
   >
     <li
       className={twMerge(
-        'hover:bg-accent-secondary mx-2 mt-2 flex h-full cursor-pointer',
-        'rounded-lg border-2 border-black px-2 py-2 text-center',
-        'transition-colors duration-200 flex flex-col focus-within:ring-2 focus-within:ring-accent-primary',
+        'hover:bg-accent-secondary purr:mx-2 purr:mt-2 purr:flex purr:h-full purr:cursor-pointer',
+        'purr:rounded-lg purr:border-2 purr:border-black purr:px-2 purr:py-2 purr:text-center',
+        'purr:transition-colors purr:duration-200 purr:flex purr:flex-col focus-within:ring-2 focus-within:ring-accent-primary',
         className
       )}
       role="button"
       tabIndex={0}
     >
-      <span className="font-medium">{item.name}</span>
+      <span className="purr:font-medium">{item.name}</span>
       {item.description && (
-        <span className="text-sm text-gray-500 ml-2 mt-1">{item.description}</span>
+        <span className="purr:text-sm purr:text-gray-500 purr:ml-2 purr:mt-1">{item.description}</span>
       )}
     </li>
   </a>

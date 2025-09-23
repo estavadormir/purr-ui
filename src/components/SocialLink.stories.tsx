@@ -72,7 +72,7 @@ export const IconOnly: Story = {
 
 export const SocialLinks: Story = {
   render: () => (
-    <div className="flex flex-col space-y-2 p-4">
+    <div className="purr:flex purr:flex-col purr:space-y-2 purr:p-4">
       <SocialLink
         href="https://github.com"
         icon={FaGithub}
@@ -161,17 +161,17 @@ export const AccessibilityTest: Story = {
 // Visual Tests with different states
 export const VisualStates: Story = {
   render: () => (
-    <div className="space-y-4 p-4">
-      <div className="space-y-2">
-        <h3 className="text-white text-lg">Normal State</h3>
+    <div className="purr:space-y-4 purr:p-4">
+      <div className="purr:space-y-2">
+        <h3 className="purr:text-white purr:text-lg">Normal State</h3>
         <SocialLink href="https://github.com" icon={FaGithub}>GitHub</SocialLink>
       </div>
-      <div className="space-y-2">
-        <h3 className="text-white text-lg">Focus State (use Tab to navigate)</h3>
+      <div className="purr:space-y-2">
+        <h3 className="purr:text-white purr:text-lg">Focus State (use Tab to navigate)</h3>
         <SocialLink href="https://linkedin.com" icon={FaLinkedin}>LinkedIn</SocialLink>
       </div>
-      <div className="space-y-2">
-        <h3 className="text-white text-lg">Icon Only</h3>
+      <div className="purr:space-y-2">
+        <h3 className="purr:text-white purr:text-lg">Icon Only</h3>
         <SocialLink href="https://twitter.com" icon={FaTwitter} ariaLabel="Twitter" />
       </div>
     </div>

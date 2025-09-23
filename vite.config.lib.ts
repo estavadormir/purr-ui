@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss({ config: './tailwind.config.ts' })],
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
