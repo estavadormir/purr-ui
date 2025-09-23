@@ -7,11 +7,11 @@
   "keywords": ["react", "components", "tailwindcss", "typescript", "ui", "storybook"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/hairyfeet/purr-ui.git"
+    "url": "https://github.com/estavadormir/purr-ui.git"
   },
-  "homepage": "https://hairyfeet.github.io/purr-ui",
+  "homepage": "https://estavadormir.github.io/purr-ui",
   "bugs": {
-    "url": "https://github.com/hairyfeet/purr-ui/issues"
+    "url": "https://github.com/estavadormir/purr-ui/issues"
   },
   "author": "Andre <your-email@example.com>",
   "license": "MIT",
