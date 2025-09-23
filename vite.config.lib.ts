@@ -3,10 +3,9 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { resolve } from 'path';
-import { glob } from 'glob';
 
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss({ config: './tailwind.config.ts' })],
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),

@@ -2,6 +2,12 @@
 
 A modern, accessible React component library built with TailwindCSS.
 
+## 📖 Documentation
+
+**[View Live Storybook Documentation](https://estavadormir.github.io/purr-ui)**
+
+Explore all components with interactive examples, accessibility tests, and usage guidelines.
+
 ## Features
 
 - **TailwindCSS v4** - Modern utility-first styling approach
@@ -53,14 +59,51 @@ function App() {
 ### ProjectCard
 Showcase your projects with beautiful cards including technology tags and hover effects.
 
+```jsx
+<ProjectCard
+  title="My Awesome App"
+  description="A modern web application built with React and TypeScript"
+  url="https://github.com/user/project"
+  technologies={['React', 'TypeScript', 'TailwindCSS']}
+/>
+```
+
 ### SectionTitle
 Versatile section titles with multiple variants (initial, standard, tech, contact).
+
+```jsx
+<SectionTitle
+  title="About Me"
+  subtitle="Learn more about my background"
+  variant="standard"
+/>
+```
 
 ### TechCard
 Display technologies with icons and animations.
 
+```jsx
+<TechCard
+  item={{
+    name: 'React',
+    url: 'https://reactjs.org',
+    description: 'A JavaScript library for building user interfaces'
+  }}
+/>
+```
+
 ### SocialLink
 Social media links with hover effects and accessibility features.
+
+```jsx
+<SocialLink
+  href="https://github.com/username"
+  icon={FaGithub}
+  ariaLabel="Visit my GitHub profile"
+>
+  GitHub
+</SocialLink>
+```
 
 ## Development
 
@@ -77,6 +120,15 @@ pnpm test
 # Build for production
 pnpm build
 ```
+
+## CI/CD
+
+This package uses GitHub Actions for automated testing, publishing, and documentation:
+
+- **Pull Requests**: Runs tests, linting, and builds on Node.js 20.x
+- **Main Branch**: Automatically publishes to NPM after successful tests
+- **Storybook**: Automatically deploys documentation to GitHub Pages on main branch
+- **Requirements**: NPM_TOKEN secret must be configured in repository settings
 
 ## Contributing
 

@@ -16,7 +16,7 @@ const meta = {
   tags: ['autodocs'],
   decorators: [
     (Story) => (
-      <ul className="list-none p-4">
+      <ul className="purr:list-none purr:p-4">
         <Story />
       </ul>
     ),
@@ -57,7 +57,7 @@ export const LongDescription: Story = {
 
 export const TechGrid: Story = {
   render: () => (
-    <ul className="grid grid-cols-2 gap-2 p-4 max-w-md">
+    <ul className="purr:grid purr:grid-cols-2 purr:gap-2 purr:p-4 purr:max-w-md">
       <TechCard
         item={{
           name: 'React',
@@ -170,17 +170,17 @@ export const AccessibilityTest: Story = {
 // Visual regression test with multiple states
 export const VisualStates: Story = {
   render: () => (
-    <div className="space-y-4 p-4">
-      <h3 className="text-lg font-semibold">Different TechCard States</h3>
-      <div className="space-y-4">
+    <div className="purr:space-y-4 purr:p-4">
+      <h3 className="purr:text-lg purr:font-semibold">Different TechCard States</h3>
+      <div className="purr:space-y-4">
         <div>
-          <span className="text-sm text-gray-600 block mb-2">Normal State:</span>
+          <span className="purr:text-sm purr:text-gray-600 purr:block purr:mb-2">Normal State:</span>
           <ul>
             <TechCard item={{ name: 'React', url: 'https://reactjs.org' }} />
           </ul>
         </div>
         <div>
-          <span className="text-sm text-gray-600 block mb-2">With Description:</span>
+          <span className="purr:text-sm purr:text-gray-600 purr:block purr:mb-2">With Description:</span>
           <ul>
             <TechCard item={{
               name: 'TypeScript',
@@ -190,7 +190,7 @@ export const VisualStates: Story = {
           </ul>
         </div>
         <div>
-          <span className="text-sm text-gray-600 block mb-2">Long Description:</span>
+          <span className="purr:text-sm purr:text-gray-600 purr:block purr:mb-2">Long Description:</span>
           <ul>
             <TechCard item={{
               name: 'Next.js',

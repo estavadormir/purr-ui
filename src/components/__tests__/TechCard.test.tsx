@@ -73,7 +73,7 @@ describe('TechCard', () => {
 
     const listItem = screen.getByRole('button');
     expect(listItem).toHaveClass('hover:bg-accent-secondary');
-    expect(listItem).toHaveClass('transition-colors');
+    expect(listItem).toHaveClass('purr:transition-colors');
     expect(listItem).toHaveClass('focus-within:ring-2');
   });
 });

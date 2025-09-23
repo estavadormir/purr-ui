@@ -8,50 +8,50 @@ interface TitleProps {
 
 // For Initial section (white text with aqua subtitle)
 export const InitialTitle = ({ title, subtitle, className }: TitleProps) => (
-  <div className={twMerge('flex flex-col', className)}>
-    <h2 className="title-main ml-5 mt-5 flex justify-center pl-2 lg:mb-2 lg:justify-start">
+  <div className={twMerge('purr:flex purr:flex-col', className)}>
+    <h2 className="title-main purr:ml-5 purr:mt-5 purr:flex purr:justify-center purr:pl-2 lg:mb-2 lg:justify-start">
       {title}
       {subtitle && (
-        <span className="text-accent-secondary ml-4 lg:ml-6">{subtitle}</span>
+        <span className="purr:text-accent-secondary purr:ml-4 lg:ml-6">{subtitle}</span>
       )}
     </h2>
-    <div className="w-48 h-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary ml-7 mt-2" />
-    <div className="w-32 h-0.5 bg-gradient-to-r from-accent-secondary to-accent-primary ml-7 mt-1" />
+    <div className="purr:w-48 purr:h-0.5 purr:bg-gradient-to-r from-accent-primary to-accent-secondary purr:ml-7 purr:mt-2" />
+    <div className="purr:w-32 purr:h-0.5 purr:bg-gradient-to-r from-accent-secondary to-accent-primary purr:ml-7 purr:mt-1" />
   </div>
 );
 
 // For the About sections (white text with pink dots)
 export const StandardTitle = ({ title, subtitle, className }: TitleProps) => (
-  <div className={twMerge('flex flex-col', className)}>
-    <h2 className="ml-5 mt-5 flex justify-center pl-2 text-4xl text-gray-100 lg:mb-2 lg:justify-start lg:text-6xl">
+  <div className={twMerge('purr:flex purr:flex-col', className)}>
+    <h2 className="purr:ml-5 purr:mt-5 purr:flex purr:justify-center purr:pl-2 purr:text-4xl purr:text-gray-100 lg:mb-2 lg:justify-start lg:text-6xl">
       {title}
-      {subtitle && <span className="text-accent-primary ">{subtitle}</span>}
+      {subtitle && <span className="purr:text-accent-primary ">{subtitle}</span>}
     </h2>
-    <div className="w-48 h-1 bg-accent-primary ml-7 mt-2" />
-    <div className="w-32 h-1 bg-accent-primary ml-7 mt-1" />
+    <div className="purr:w-48 purr:h-1 purr:bg-accent-primary purr:ml-7 purr:mt-2" />
+    <div className="purr:w-32 purr:h-1 purr:bg-accent-primary purr:ml-7 purr:mt-1" />
   </div>
 );
 
 // For TechStack section (black text with pink dots)
 export const TechStackTitle = ({ title, subtitle, className }: TitleProps) => (
-  <div className={twMerge('flex flex-col', className)}>
-    <h2 className="ml-5 mt-5 flex justify-center pl-2 text-4xl text-slate-900 lg:mb-2 lg:justify-start lg:text-6xl">
+  <div className={twMerge('purr:flex purr:flex-col', className)}>
+    <h2 className="purr:ml-5 purr:mt-5 purr:flex purr:justify-center purr:pl-2 purr:text-4xl purr:text-slate-900 lg:mb-2 lg:justify-start lg:text-6xl">
       {title}
-      {subtitle && <span className="text-accent-primary">{subtitle}</span>}
+      {subtitle && <span className="purr:text-accent-primary">{subtitle}</span>}
     </h2>
-    <div className="w-48 h-1 bg-accent-primary ml-7 mt-2" />
-    <div className="w-32 h-1 bg-accent-primary ml-7 mt-1" />
+    <div className="purr:w-48 purr:h-1 purr:bg-accent-primary purr:ml-7 purr:mt-2" />
+    <div className="purr:w-32 purr:h-1 purr:bg-accent-primary purr:ml-7 purr:mt-1" />
   </div>
 );
 
 // For Contact section (pink border bottom style)
 export const ContactTitle = ({ title, subtitle, className }: TitleProps) => (
-  <div className={twMerge('flex flex-col', className)}>
-    <h2 className="flex-start font-display text-brand text-accent-primary border-accent-primary mb-4 flex border-b-2 font-bold uppercase lg:text-xl">
+  <div className={twMerge('purr:flex purr:flex-col', className)}>
+    <h2 className="purr:flex-start purr:font-display purr:text-brand purr:text-accent-primary purr:border-accent-primary purr:mb-4 purr:flex purr:border-b-2 purr:font-bold purr:uppercase lg:text-xl">
       {title}
     </h2>
     {subtitle && (
-      <h1 className="mb-2 mt-5 flex justify-start text-4xl text-gray-100 lg:text-6xl">
+      <h1 className="purr:mb-2 purr:mt-5 purr:flex purr:justify-start purr:text-4xl purr:text-gray-100 lg:text-6xl">
         {subtitle}
       </h1>
     )}

@@ -18,10 +18,10 @@ export const SocialLink = ({
 }: SocialLinkProps) => (
   <a
     className={twMerge(
-      'hover:text-accent-primary mr-2 mt-2 flex cursor-pointer',
-      'justify-start rounded-lg px-2 text-center sm:text-xl',
+      'hover:text-accent-primary purr:mr-2 purr:mt-2 purr:flex purr:cursor-pointer',
+      'purr:justify-start purr:rounded-lg purr:px-2 purr:text-center sm:text-xl',
       'focus:outline-none focus:ring-2 focus:ring-accent-primary',
-      'transition-colors duration-200',
+      'purr:transition-colors purr:duration-200',
       className
     )}
     href={href}
@@ -29,7 +29,7 @@ export const SocialLink = ({
     rel="noopener noreferrer"
     aria-label={ariaLabel || (typeof children === 'string' ? children : 'Social link')}
   >
-    {Icon && <Icon size={32} className="mr-2" aria-hidden="true" />}
+    {Icon && <Icon size={32} className="purr:mr-2" aria-hidden="true" />}
     {children}
   </a>
 );

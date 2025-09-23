@@ -70,17 +70,17 @@ export const Contact: Story = {
 
 export const AllVariants: Story = {
   render: () => (
-    <div className="space-y-8 p-4">
-      <div className="bg-gray-900 p-4 rounded">
+    <div className="purr:space-y-8 purr:p-4">
+      <div className="purr:bg-gray-900 purr:p-4 purr:rounded">
         <SectionTitle title="Hello, I'm" subtitle="Andre" variant="initial" />
       </div>
-      <div className="bg-gray-900 p-4 rounded">
+      <div className="purr:bg-gray-900 purr:p-4 purr:rounded">
         <SectionTitle title="About Me" variant="standard" />
       </div>
-      <div className="bg-white p-4 rounded">
+      <div className="purr:bg-white purr:p-4 purr:rounded">
         <SectionTitle title="Tech Stack" variant="tech" />
       </div>
-      <div className="bg-gray-900 p-4 rounded">
+      <div className="purr:bg-gray-900 purr:p-4 purr:rounded">
         <SectionTitle title="Contact" subtitle="Get In Touch" variant="contact" />
       </div>
     </div>
@@ -135,31 +135,31 @@ export const AccessibilityTest: Story = {
 // Visual Regression Test for all variants
 export const VisualRegressionTest: Story = {
   render: () => (
-    <div className="space-y-12 p-8">
+    <div className="purr:space-y-12 purr:p-8">
       <section>
-        <h3 className="mb-4 text-lg font-semibold">Initial Variant (Dark Background)</h3>
-        <div className="bg-gray-900 p-6 rounded-lg">
+        <h3 className="purr:mb-4 purr:text-lg purr:font-semibold">Initial Variant (Dark Background)</h3>
+        <div className="purr:bg-gray-900 purr:p-6 purr:rounded-lg">
           <SectionTitle title="Hello, I'm" subtitle="Developer" variant="initial" />
         </div>
       </section>
 
       <section>
-        <h3 className="mb-4 text-lg font-semibold">Standard Variant (Dark Background)</h3>
-        <div className="bg-gray-900 p-6 rounded-lg">
+        <h3 className="purr:mb-4 purr:text-lg purr:font-semibold">Standard Variant (Dark Background)</h3>
+        <div className="purr:bg-gray-900 purr:p-6 purr:rounded-lg">
           <SectionTitle title="About Me" variant="standard" />
         </div>
       </section>
 
       <section>
-        <h3 className="mb-4 text-lg font-semibold">Tech Variant (Light Background)</h3>
-        <div className="bg-white p-6 rounded-lg border">
+        <h3 className="purr:mb-4 purr:text-lg purr:font-semibold">Tech Variant (Light Background)</h3>
+        <div className="purr:bg-white purr:p-6 purr:rounded-lg purr:border">
           <SectionTitle title="Technologies" variant="tech" />
         </div>
       </section>
 
       <section>
-        <h3 className="mb-4 text-lg font-semibold">Contact Variant (Dark Background)</h3>
-        <div className="bg-gray-900 p-6 rounded-lg">
+        <h3 className="purr:mb-4 purr:text-lg purr:font-semibold">Contact Variant (Dark Background)</h3>
+        <div className="purr:bg-gray-900 purr:p-6 purr:rounded-lg">
           <SectionTitle title="Contact" subtitle="Get In Touch" variant="contact" />
         </div>
       </section>

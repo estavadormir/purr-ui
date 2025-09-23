@@ -7,9 +7,11 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   test: {
     name: 'unit',
-    environment: 'jsdom',
+    environment: 'happy-dom',
     globals: true,
     setupFiles: ['./src/test-setup.ts'],
+    pool: 'forks',
+    isolate: true,
     coverage: {
       reporter: ['text', 'json', 'html'],
       exclude: [

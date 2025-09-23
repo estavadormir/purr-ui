@@ -67,6 +67,6 @@ describe('SocialLink', () => {
     expect(link).toHaveClass('hover:text-accent-primary');
     expect(link).toHaveClass('focus:outline-none');
     expect(link).toHaveClass('focus:ring-2');
-    expect(link).toHaveClass('transition-colors');
+    expect(link).toHaveClass('purr:transition-colors');
   });
 });
