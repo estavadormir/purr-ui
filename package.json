@@ -1,7 +1,7 @@
 {
   "name": "@estavadormir/purr-ui",
   "private": false,
-  "version": "0.2.1",
+  "version": "0.2.2",
   "type": "module",
   "description": "A modern, accessible React component library with TailwindCSS styling",
   "keywords": [

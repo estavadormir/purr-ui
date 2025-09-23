@@ -1,4 +1,4 @@
-@import "tailwindcss" prefix(purr);
+@import "tailwindcss" prefix(purr) layer(utilities);
 
 @theme {
   --color-accent-primary: #ff0050;
