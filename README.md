@@ -82,7 +82,7 @@ pnpm build
 
 This package uses GitHub Actions for automated testing and publishing:
 
-- **Pull Requests**: Runs tests, linting, and builds on Node.js 18.x and 20.x
+- **Pull Requests**: Runs tests, linting, and builds on Node.js 20.x
 - **Main Branch**: Automatically publishes to NPM after successful tests
 - **Requirements**: NPM_TOKEN secret must be configured in repository settings
 
