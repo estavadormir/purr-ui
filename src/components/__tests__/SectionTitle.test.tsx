@@ -29,14 +29,14 @@ describe('SectionTitle', () => {
     render(<SectionTitle title="Tech Stack" variant="tech" />);
 
     const heading = screen.getByRole('heading', { level: 2 });
-    expect(heading).toHaveClass('text-slate-900');
+    expect(heading).toHaveClass('purr:text-slate-900');
   });
 
   it('renders contact variant with border styling', () => {
     render(<SectionTitle title="Contact" subtitle="Get In Touch" variant="contact" />);
 
     const contactHeading = screen.getByText('Contact');
-    expect(contactHeading).toHaveClass('border-b-2', 'border-accent-primary');
+    expect(contactHeading).toHaveClass('purr:border-b-2', 'purr:border-accent-primary');
 
     const subtitle = screen.getByText('Get In Touch');
     expect(subtitle).toBeInTheDocument();
@@ -52,7 +52,7 @@ describe('SectionTitle', () => {
   it('renders decorative elements for standard variant', () => {
     const { container } = render(<SectionTitle title="Test" variant="standard" />);
 
-    const decorativeElements = container.querySelectorAll('.bg-accent-primary');
+    const decorativeElements = container.querySelectorAll('.purr\\:bg-accent-primary');
     expect(decorativeElements).toHaveLength(2);
   });
 });
