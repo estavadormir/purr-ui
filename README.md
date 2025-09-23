@@ -88,4 +88,4 @@ pnpm build
 
 ## License
 
-MIT © [Andre](https://github.com/hairyfeet)
+MIT © [Andre](https://github.com/estavadormir)

@@ -13,7 +13,7 @@
   "bugs": {
     "url": "https://github.com/estavadormir/purr-ui/issues"
   },
-  "author": "Andre <your-email@example.com>",
+  "author": "Andre <andrelikescomputers@gmail.com>",
   "license": "MIT",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
