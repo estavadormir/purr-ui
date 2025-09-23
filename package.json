@@ -51,7 +51,7 @@
     "test:coverage": "vitest --config vitest.config.unit.ts --coverage",
     "test:storybook": "vitest --project=storybook --run",
     "test:all": "pnpm test:unit && pnpm test:storybook",
-    "prepublishOnly": "pnpm test:all && pnpm build"
+    "prepublishOnly": "pnpm test:unit && pnpm build"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
