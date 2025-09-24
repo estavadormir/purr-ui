@@ -17,7 +17,7 @@ export const ProjectCard = ({
   url,
   technologies,
   image,
-  className
+  className = ''
 }: ProjectCardProps) => (
   <a
     href={url}
