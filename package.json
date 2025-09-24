@@ -1,7 +1,7 @@
 {
   "name": "@estavadormir/purr-ui",
   "private": false,
-  "version": "0.2.5",
+  "version": "0.2.6",
   "type": "module",
   "description": "A modern, accessible React component library with TailwindCSS styling",
   "keywords": [
@@ -38,9 +38,10 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "pnpm build:types && pnpm build:lib",
+    "build": "pnpm clean && pnpm build:types && pnpm build:lib",
     "build:lib": "vite build --config vite.config.lib.ts",
     "build:types": "tsc --project tsconfig.lib.json",
+    "clean": "rm -rf dist",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
